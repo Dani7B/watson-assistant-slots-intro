@@ -21,9 +21,9 @@ the Assistant Intents, Entities, and Dialog Nodes.
 
 ### 2. Create IBM Cloud services
 
-Create the following service and name it `wcsi-conversation-service`:
+Create the following service and name it `wasi-assistant-service`:
 
-* [**Watson Assistant**](https://cloud.ibm.com/catalog/services/conversation)
+* [**Watson Assistant**](https://cloud.ibm.com/catalog/services/watson-assistant)
 
 ### 3. Configure Watson Assistant
 
