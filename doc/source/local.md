@@ -14,7 +14,7 @@ This document shows how to run the `watson-assistant-slots-intro` application on
 
 Clone `watson-conversation-slots-intro` locally. In a terminal, run:
 
-  `$ git clone https://github.com/ibm/watson-conversation-slots-intro`
+  `$ git clone https://github.com/Dani7B/watson-conversation-slots-intro`
 
 We’ll be using the file [`data/watson-pizzeria.json`](../../data/watson-pizzeria.json) to upload
 the Assistant Intents, Entities, and Dialog Nodes.
