@@ -47,18 +47,18 @@ To find the `WORKSPACE_ID` for Watson Assistant:
 * Click on the three dots in the upper right-hand corner of the card and select `View API Details`.
 * Copy the `Workspace ID` GUID.
 
-!["Get Workspace ID"](https://raw.githubusercontent.com/IBM/pattern-utils/master/watson-assistant/assistantPostSkillGetID.gif)
+!["Get Skill ID"](https://raw.githubusercontent.com/IBM/pattern-utils/master/watson-assistant/assistantPostSkillGetID.gif)
 
-* In the next step, you will put this `Workspace ID` into the `.env` file as `WORKSPACE_ID`.
+* In the next step, you will put this `Skill ID` into the `.env` file as `WORKSPACE_ID`.
 
 ### 4. Get IBM Cloud services credentials and add to .env file
 
 * Move the `watson-assistant-slots-intro/env.sample` file to `watson-assistant-slots-intro/.env`.
 
-* Put the `Workspace ID` into the `.env` file as `WORKSPACE_ID`.
+* Put the `Skill ID` into the `.env` file as `WORKSPACE_ID`.
 
 ```bash
-WORKSPACE_ID=<put workspace id here>
+WORKSPACE_ID=<put skill id here>
 ```
 <p>
 
