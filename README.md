@@ -10,6 +10,7 @@ When the reader has completed this Code Pattern, they will understand how to:
 * Use the power of Assistant Slots to more efficiently populate data fields
 * Use Assistant Slots to handle various inputs within one Node.
 
+
 !["Architecture"](doc/source/images/architecture.png)
 
 ## Flow
