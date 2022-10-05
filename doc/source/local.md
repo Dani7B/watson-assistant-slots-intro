@@ -39,7 +39,6 @@ Create the following service and name it `wasi-assistant-service`:
 * Select `Upload`.
 
 </p>
-</details>
 
 To find the `WORKSPACE_ID` for Watson Assistant:
 
@@ -50,21 +49,17 @@ To find the `WORKSPACE_ID` for Watson Assistant:
 
 !["Get Workspace ID"](https://raw.githubusercontent.com/IBM/pattern-utils/master/watson-assistant/assistantPostSkillGetID.gif)
 
-* In the next step, you will put this `Workspace ID` into the `.env file as ``WORKSPACE_ID``.
+* In the next step, you will put this `Workspace ID` into the `.env` file as `WORKSPACE_ID`.
 
 ### 4. Get IBM Cloud services credentials and add to .env file
 
-* Move the `watson-conversation-slots-intro/env.sample` file to ``watson-conversation-slots-intro/.env``.
+* Move the `watson-assistant-slots-intro/env.sample` file to `watson-assistant-slots-intro/.env`.
 
-* Put the `Workspace ID` into the `.env file as ``WORKSPACE_ID``.
+* Put the `Workspace ID` into the `.env` file as `WORKSPACE_ID`.
 
 ```bash
 WORKSPACE_ID=<put workspace id here>
 ```
-
-The remaining credentials will depend on if you are provisioning Assistant from IBM Cloud or from an IBM Cloud Pak for Data cluster. Choose one:
-
-<details><summary>Provision on IBM Cloud</summary>
 <p>
 
 * Use the `apikey` and `url` from your Watson Assistant service credentials in the `.env` file.
@@ -78,38 +73,8 @@ CONVERSATION_URL=<put assistant url here>
 ```
 
 </p>
-</details>
-
-<details><summary>Provision on IBM Cloud Pak for Data</summary>
-<p>
-
-* Use the `URL` from your Watson Assistant service details to set the `CONVERSATION_URL` value in the `.env` file.
-
-!["CPD Credentials"](images/cpd-assistant-details.png)
-
-```bash
-# If Assistant service is hosted on CP4D Cluster, uncomment and use these variables for CP4D Authentication
-CONVERSATION_AUTH_TYPE=cp4d
-CONVERSATION_AUTH_URL=<put cp4d url here>
-CONVERSATION_AUTH_DISABLE_SSL=true
-CONVERSATION_USERNAME=<put cp4d username here>
-CONVERSATION_PASSWORD=<put cp4d password here>
-CONVERSATION_URL=<put assistant url here>
-CONVERSATION_DISABLE_SSL=true
-```
-
-`CONVERSATION_AUTH_URL`, `CONVERSATION_USERNAME` and `CONVERSATION_PASSWORD` are related to the URL and login credentials for accessing your IBM Cloud Pak for Data cluster.
-
-</p>
-</details>
 
 ### 5. Run the application
-
-#### If you used the Deploy to IBM Cloud button...
-
-If you used ``Deploy to IBM Cloud``, the setup is automatic.
-
-#### If you decided to run the app locally...
 
 ```bash
 npm install
@@ -117,5 +82,3 @@ npm start
 ```
 
 The application will be available in your browser at http://localhost:3000
-
-[![return](https://raw.githubusercontent.com/IBM/pattern-utils/master/deploy-buttons/return.png)](https://github.com/IBM/watson-assistant-slots-intro#deployment-options)
