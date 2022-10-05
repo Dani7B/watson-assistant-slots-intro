@@ -27,37 +27,16 @@ Create the following service and name it `wasi-assistant-service`:
 
 ### 3. Configure Watson Assistant
 
-#### Import the Assistant workspace.json:
-
-The following instructions will depend on if you are provisioning Assistant from IBM Cloud or from an IBM Cloud Pak for Data cluster. Choose one:
-
-<details><summary>Provision on IBM Cloud</summary>
-<p>
+#### Import the Assistant workspace.json (aka watson-pizzeria.json):
 
 * Find the Assistant service in your IBM Cloud Dashboard.
 * Click on the `Manage` tab and then click on `Launch Watson Assistant`.
-* Go to the `Skills` tab.
+* Go to the `Skills` tab on the left (hover on the second icon in the list and you should see the Skills label appear).
 * Click `Create skill`
 * Select the `Dialog skill` option and then click `Next`.
-* Click the `Import skill` tab.
-* Click `Choose JSON file`, go to your cloned repo dir, and `Open` the workspace.json file in [`data/watson-pizzeria.json`](../../data/watson-pizzeria.json).
-* Select `Everything` and click `Import`.
-
-</p>
-</details>
-
-<details><summary>Provision on IBM Cloud Pak for Data</summary>
-<p>
-
-* Find the Assistant service in your list of `Provisioned Instances` in your IBM Cloud Pak for Data Dashboard.
-* Click on `View Details` from the options menu associated with your Assistant service.
-* Click on `Open Watson Assistant`.
-* Go to the `Skills` tab.
-* Click `Create skill`
-* Select the `Dialog skill` option and then click `Next`.
-* Click the `Import skill` tab.
-* Click `Choose JSON file`, go to your cloned repo dir, and `Open` the workspace.json file in [`data/watson-pizzeria.json`](../../data/watson-pizzeria.json).
-* Select `Everything` and click `Import`.
+* Click the `Upload skill` tab.
+* Click `Drag and drop file here or click to select a file`, go to your cloned repo directory, select the file in [`data/watson-pizzeria.json`](../../data/watson-pizzeria.json).
+* Select `Upload`.
 
 </p>
 </details>
