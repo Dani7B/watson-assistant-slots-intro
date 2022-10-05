@@ -10,21 +10,15 @@ When the reader has completed this Code Pattern, they will understand how to:
 * Use the power of Assistant Slots to more efficiently populate data fields
 * Use Assistant Slots to handle various inputs within one Node.
 
-> **NOTE**: This code pattern has been updated to include instructions for accessing Watson Assistant running on IBM Cloud Pak for Data. These updates can be found in the specific instructions for deploying your app [locally](doc/source/local.md), or deploying your app to [OpenShift on IBM Cloud](doc/source/openshift.md). The main change required is that your application will need additional credentials to access the IBM Cloud Pak for Data cluster that is hosting the Watson Assistant service.
->
-> Click [here](https://www.ibm.com/products/cloud-pak-for-data) for more information about IBM Cloud Pak for Data.
-
 !["Architecture"](doc/source/images/architecture.png)
 
 ## Flow
 
 1. User sends messages to the application (running locally or on IBM Cloud).
 2. The application sends the user message to IBM Watson Assistant service, and displays the ongoing chat in a web page.
-3. Watson Assistant uses the Slots feature to fill out the required fields for a pizza order, and sends requests for additional information back to the running application. Watson Assistant can be provisioned on either IBM Cloud or IBM Cloud Pak for Data.
+3. Watson Assistant uses the Slots feature to fill out the required fields for a pizza order, and sends requests for additional information back to the running application. Watson Assistant can be provisioned on IBM Cloud.
 
 ## Included Components
-
-> **NOTE**: This Code Pattern uses Watson Assistant experience. After October 8, 2021, all instances (non-standard) can switch between the classic and new Watson Assistant experiences by going to the upper-right corner of the Watson Assistant screen and clicking the *Manage* icon <img title="a title" alt="manage-icon" src="https://github.com/IBM/pattern-utils/blob/master/watson-assistant/person-icon-sm.png" width="15" height="15"> located in the top-right corner of the Assistant screen. Click on *Switch to classic experience* or click on *Switch to new experience* in order to toggle between the two.
 
 * [IBM Watson Assistant](https://www.ibm.com/cloud/watson-assistant/): Build, test and deploy a bot or virtual agent across mobile devices, messaging platforms, or even on a physical robot.
 
@@ -32,19 +26,13 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 * [Node.js](https://nodejs.org/): An asynchronous event driven JavaScript runtime, designed to build scalable applications.
 
-## Watch the Video
-
-| Using Cloud Foundry on IBM Cloud | Using IBM Cloud's Kubernetes service |
-| - | - |
-| [![video](https://i.ytimg.com/vi/dTuJU8-FnNM/0.jpg)](https://youtu.be/dTuJU8-FnNM) | [!["video"](https://i.ytimg.com/vi/G-rESweRG84/0.jpg)](https://youtu.be/G-rESweRG84) |
-
 ## Deployment options
 
 Click on one of the options below for instructions on deploying the app.
 
-|   |   |   |   |
-| - | - | - | - |
-| [![public](https://raw.githubusercontent.com/IBM/pattern-utils/master/deploy-buttons/cf.png)](doc/source/cf.md) | [![public](https://raw.githubusercontent.com/IBM/pattern-utils/master/deploy-buttons/iks.png)](doc/source/iks.md) | [![openshift](https://raw.githubusercontent.com/IBM/pattern-utils/master/deploy-buttons/openshift.png)](doc/source/openshift.md) | [![local](https://raw.githubusercontent.com/IBM/pattern-utils/master/deploy-buttons/local.png)](doc/source/local.md) |
+|   |
+| - |
+| (https://raw.githubusercontent.com/IBM/pattern-utils/master/deploy-buttons/local.png)](doc/source/local.md) |
 
 ## Assistant Slots Discussion
 
@@ -143,21 +131,6 @@ Type reset to start again and test this by adding the phrase "to eat there...":
 ![](doc/source/images/pizzaEX5eatThere.png)
 
 ## Troubleshooting
-
-* Deploy using Cloud Foundry `cf push` gives:
-
-``FAILED
-Could not find service <Watson_service> to bind to <IBM_Cloud_application>``
-
-If you name your service `wcsi-conversation-service`, this should work.
-When you use `cf push`, it is trying to bind to the services listed in the `manifest.yml`.
-
-So, there are 2 ways you can get this to work:
-
-* Change the names of your IBM Cloud services to match the names in the manifest.
-* Change the names in the manifest to match the names of your IBM Cloud services.
-
->NOTE: The `Deploy to IBM Cloud` button solves this issue by creating the services on the fly (with the correct names).
 
 ## License
 
