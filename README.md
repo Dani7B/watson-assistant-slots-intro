@@ -29,7 +29,7 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 ## Deployment
 
-Click [this guide](doc/source/local.md) for instructions on deploying the app locally.
+Check [this guide](doc/source/local.md) for instructions on deploying the app locally.
 
 ## Assistant Slots Discussion
 
