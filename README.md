@@ -27,9 +27,9 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 * [Node.js](https://nodejs.org/): An asynchronous event driven JavaScript runtime, designed to build scalable applications.
 
-## Deployment options
+## Deployment
 
-Click on one of the options below for instructions on deploying the app.
+Click on one of the options below for instructions on deploying the app locally.
 
 |   |
 | - |
