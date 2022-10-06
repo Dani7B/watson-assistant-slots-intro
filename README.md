@@ -84,11 +84,6 @@ is filled, and then handle the case where it is not.
 
 !["Pizza order finish no place"](doc/source/images/pizzaOrderFinish2.png)
 
-Finally, we add a handler for the case where the user's answers to a prompt
-is not found. We've added a handler for the intent "help".
-
-!["Pizza handle Help"](doc/source/images/pizzaHandleHelp.png)
-
 We have a dialog node to handle the intent `#reset` which will reset all fields to `null`:
 
 !["Pizza reset node"](doc/source/images/pizzaResetNode.png)
