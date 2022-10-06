@@ -30,7 +30,7 @@ Create the following service and name it `wasi-assistant-service`:
 #### Import the Assistant workspace.json (aka watson-pizzeria.json):
 
 * Find the Assistant service in your IBM Cloud Dashboard.
-* Click on the `Manage` tab and then click on `Launch Watson Assistant`.
+* Click on the `Manage` tab and copy the `Url` parameter under Credentials (you are going to need it later), then click on `Launch Watson Assistant`.
 * Go to the `Skills` tab on the left (hover on the second icon in the list and you should see the Skills label appear).
 * Click `Create skill`
 * Select the `Dialog skill` option and then click `Next`.
@@ -62,7 +62,7 @@ WORKSPACE_ID=<put skill id here>
 ```
 <p>
 
-* Use the `apikey` and `url` from your Watson Assistant service credentials in the `.env` file.
+* Use the `apikey` and `url` from your Watson Assistant service credentials in the `.env` file. If you didn't copy the `Url` from the Watson Assistant launch page, go to the Skill details page (where you got the Skill ID and API Key). There you will find the `Legacy v1 workspace URL`: the URL you are going to need is a substring of the `Legacy v1 workspace URL`, from start to `/v1/workspaces/...` excluded.
 
 !["Assistant Credentials"](https://raw.githubusercontent.com/IBM/pattern-utils/master/watson-assistant/watson_assistant_api_key.png)
 
