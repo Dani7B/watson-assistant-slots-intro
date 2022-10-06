@@ -29,9 +29,7 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 ## Deployment
 
-Click on one of the options below for instructions on deploying the app locally.
-
-(https://raw.githubusercontent.com/IBM/pattern-utils/master/deploy-buttons/local.png)](doc/source/local.md)
+Click [this guide](https://raw.githubusercontent.com/IBM/pattern-utils/master/deploy-buttons/local.png)](doc/source/local.md) for instructions on deploying the app locally.
 
 ## Assistant Slots Discussion
 
