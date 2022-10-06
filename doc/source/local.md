@@ -47,7 +47,7 @@ To find the `WORKSPACE_ID` for Watson Assistant:
 * Click on the three dots in the upper right-hand corner of the card and select `View API Details`.
 * Copy the `Workspace ID` GUID.
 
-!["Get Skill ID"](https://raw.githubusercontent.com/IBM/pattern-utils/master/watson-assistant/assistantPostSkillGetID.gif)
+!["Get Skill ID"](images/credentials.png)
 
 * In the next step, you will put this `Skill ID` into the `.env` file as `WORKSPACE_ID`.
 
@@ -64,7 +64,7 @@ WORKSPACE_ID=<put skill id here>
 
 * Use the `apikey` and `url` from your Watson Assistant service credentials in the `.env` file. If you didn't copy the `Url` from the Watson Assistant launch page, go to the Skill details page (where you got the Skill ID and API Key). There you will find the `Legacy v1 workspace URL`: the URL you are going to need is a substring of the `Legacy v1 workspace URL`, from start to `/v1/workspaces/...` excluded.
 
-!["Assistant Credentials"](https://raw.githubusercontent.com/IBM/pattern-utils/master/watson-assistant/watson_assistant_api_key.png)
+!["Assistant Credentials"](images/launch-page.png)
 
 ```bash
 # If Assistant service is hosted on IBM Cloud, uncomment and use these variables for IAM Authentication
