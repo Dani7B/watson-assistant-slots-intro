@@ -25,16 +25,19 @@ Create the following service and name it `wasi-assistant-service`:
 
 * [**Watson Assistant**](https://cloud.ibm.com/catalog/services/watson-assistant) - You can choose the Lite free plan
 
-After the creation, you can launch the service and you'll be redirected to the homepage, which displays by feature the new experience UI. For the scope of this project we decided to use the classic experience.
-
-
-
 ### 3. Configure Watson Assistant
 
 #### Import the Assistant workspace.json (aka watson-pizzeria.json):
 
 * Find the Assistant service in your IBM Cloud Dashboard.
 * Click on the `Manage` tab and copy the `Url` parameter under Credentials (you are going to need it later), then click on `Launch Watson Assistant`.
+
+After the creation, you can launch the service and you'll be redirected to the homepage, which displays by feature the new experience UI. For the scope of this project we decided to use the classic experience.
+This is the new experience homepage you'll be shown.
+!["New experience homepage"](images/new-experience-firstpage.png)
+
+* Click on the  !["user icon"](images/user-icon.png) on the upper right corner to open the menu
+* Then choose `Switch to classic experience` and follow the wizard to be redirected to the classic experience UI.
 * Go to the `Skills` tab on the left (hover on the second icon in the list and you should see the Skills label appear).
 * Click `Create skill`
 * Select the `Dialog skill` option and then click `Next`.
