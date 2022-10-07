@@ -19,11 +19,15 @@ Clone `watson-assistant-slots-intro` locally. In a terminal, run:
 We’ll be using the file [`data/watson-pizzeria.json`](../../data/watson-pizzeria.json) to upload
 the Assistant Intents, Entities, and Dialog Nodes.
 
-### 2. Create IBM Cloud services
+### 2. Create IBM Cloud service
 
 Create the following service and name it `wasi-assistant-service`:
 
-* [**Watson Assistant**](https://cloud.ibm.com/catalog/services/watson-assistant)
+* [**Watson Assistant**](https://cloud.ibm.com/catalog/services/watson-assistant) - You can choose the Lite free plan
+
+After the creation, you can launch the service and you'll be redirected to the homepage, which displays by feature the new experience UI. For the scope of this project we decided to use the classic experience.
+
+
 
 ### 3. Configure Watson Assistant
 
