@@ -108,7 +108,7 @@
         },
         {
           "type": "synonyms",
-          "value": "quatro formaggi",
+          "value": "quattro formaggi",
           "synonyms": []
         }
       ]
@@ -358,7 +358,7 @@
       "output": {
         "text": {
           "values": [
-            "You can choose size (small, medium, large), type (cheese, margherita, quatro formaggi, or vegetarian) and extra ingredients."
+            "You can choose size (small, medium, large), type (cheese, margherita, quattro formaggi, or vegetarian) and extra ingredients."
           ]
         }
       },
@@ -396,7 +396,7 @@
     {
       "type": "event_handler",
       "output": {
-        "text": "What type of pizza do you want? You can build your own starting with cheese, or choose quatro formaggi, margherita, or vegetarian.."
+        "text": "What type of pizza do you want? You can build your own starting with cheese, or choose quattro formaggi, margherita, or vegetarian.."
       },
       "parent": "slot_6_1494421302730",
       "event_name": "focus",
@@ -528,7 +528,7 @@
       "output": {
         "text": {
           "values": [
-            "You can order a small, medium or large pizza. Types are Cheese, and you can add more ingredients, margherita, quatro formaggi, and vegetarian.",
+            "You can order a small, medium or large pizza. Types are Cheese, and you can add more ingredients, margherita, quattro formaggi, and vegetarian.",
             "If  you want to start with cheese, you can add ingredients.  We offer pepperoni, sausage, ham, olive, onion, anchovies, mushrooms, or salami"
           ],
           "selection_policy": "sequential"
